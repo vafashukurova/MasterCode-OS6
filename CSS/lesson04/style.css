@@ -1,0 +1,22 @@
+/* p {
+    color:blue;
+} */
+
+.first{
+    color:#ccc;
+    background-color: black;
+    /* font-size: 15px; */
+    font-weight: 500;
+}
+
+.second{
+    color:rgb(30,45,255);
+    background-color: yellow;
+    /* font-size: 15px; */
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.main{
+    font-size: 15px;
+}

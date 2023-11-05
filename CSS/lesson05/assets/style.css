@@ -1,0 +1,86 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    /* border-top-color: red;
+    border-top-width: 1px;
+    border-top-style: solid; */
+
+    border: 10px solid red;
+    border-radius: 10px;
+
+    /* border-top-right-radius: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 5px; */
+
+    /* border-right-color: yellowgreen;
+    border-right-width: 3px;
+    border-right-style: dotted; */
+
+    /* border: 3px dotted yellowgreen;
+
+    border-bottom-color: blue;
+    border-bottom-width: 5px;
+    border-bottom-style: dashed;
+
+    border-left-color: black;
+    border-left-width: 10px;
+    border-left-style: double; */
+}
+
+
+.head {
+    border: 2px solid green;
+    width: 500px;
+    height: 200px;
+    /* margin-top:30px;
+    margin-left: 50px;
+    margin-right: 60px; */
+    margin: 30px 60px 40px 50px;
+    margin: 50px 40px;
+    margin: 100px;
+    margin: 60px 30px 100px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 60px;
+    padding-right: 100px;
+   /* box-sizing: content-box; */
+   box-sizing: border-box;
+}
+
+
+.text-head{
+    text-align: center;
+}
+
+.text{
+    margin:20px 30px;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+}
+
+.lists{
+    margin: 30px;
+    list-style-type: disc;
+    list-style-type: none;
+}
+
+.main-list{
+    margin:30px;
+    list-style-type: lower-latin;
+    list-style-type: lower-roman;
+}
