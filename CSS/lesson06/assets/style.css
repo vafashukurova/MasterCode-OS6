@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    background-image: url(./images/download.jpg);
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-position: bottom;
+    background-position: top;
+    background-position: left;
+    background-position: right;
+    color: chocolate;
+    background-blend-mode: darken;
+    background-blend-mode: lighten;
+    margin-bottom: 30px;
+}
+
+.dog-img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    object-fit: contain;
+    object-fit: fill;
+    margin-bottom: 30px;
+}
+
+.first-content p {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.first-content>p {
+    font-size: 20px;
+
+}
+
+.second-content p {
+    color: yellow;
+}
+
+.first-content, .second-content {
+    background-color: blue;
+}
+
+.second-content+p {
+    font-size: 30px;
+}
+
+p~ul{
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+    display: inline-block;
+    margin: 30px;
+    padding: 5px;
+    /* display: none; */
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    display: inline-block;
+    margin: 40px;
+    padding: 10px;
+    visibility: hidden;
+    visibility: visible;
+   
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    margin: 40px;
+    padding: 10px;
+    opacity: .8;
+}
+
+.main-lists li{
+     font-size: 20px;
+     display: inline-block;
+     margin: 50px 20px;
+}
+
+.main-lists li a{
+    text-decoration: none;
+}
