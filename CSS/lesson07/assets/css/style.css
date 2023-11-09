@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    font-family: 'Open-Sans';
+}
+/* body{
+    height: 500vh;
+} */
+/* CSS Units :px, em, rem, vh, vw*/
+
+.second-text {
+    font-size: 18px;
+}
+
+.second-text span {
+    /* font-size: 1.5em; */
+    /* font-size: 1.5rem; */
+    /* font-size: 10vw; */
+}
+
+.first-text {
+    font-size: 1em;
+
+}
+
+/* .box {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(yellow 50px, blue);
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+    background: rgb(120, 69, 204);
+    background: linear-gradient(0deg, rgba(120, 69, 204, 1) 0%, rgba(46, 170, 49, 1) 100%);
+    background-image: radial-gradient(circle,pink 20%,rgb(61, 61, 175),yellow,green);
+    background-image: conic-gradient(from 90deg,yellow 30%,green,red,orange);
+    border-radius: 50%;
+} */
+
+
+/* Positions: static,relative,absolute,sticky,fixed */
+
+.main{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 50px;
+    position: relative;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    /* margin: 20px; */
+    /* position: static;
+    position: relative; */
+    /* position: absolute; */
+}
+
+.yellow{
+    background-color: yellow;
+    top:0px;
+    left:0px;
+
+}
+
+.red{
+    background-color: red;
+   bottom: 0;
+   right: 0;
+
+}
+
+.blue{
+    background-color: rgb(48, 48, 174);
+    top:100px;
+    left:70px;
+    
+}
+
+/* .fixed{
+    background-color: pink;
+   
+    position: fixed;
+    top:50px;
+    left: 200px;
+} */
+
+.sticky{
+    background-color: aqua;
+    margin: 20px;
+    position: sticky;
+    top:40px;
+}
+
+.main-link{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.main-link:link{
+    color:red;
+}
+
+.main-link:visited{
+    color:green;
+}
+
+.main-link:hover{
+    background-color: black;
+}
+
+.main-link:active{
+    color: crimson;
+}
+
+form{
+margin: 50px;
+}
+.name-label, .form-input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.name-label{
+    color:blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-input{
+    width: 100%;
+    padding: 10px 15px;
+    border:1px solid blue;
+    outline: none;
+    border-radius: 10px;
+    color:red;
+}
+
+.form-input::placeholder{
+    color:darkblue;
+    opacity: .5;
+    font-size: 10px;
+}
