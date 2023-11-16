@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.head {
+    background-color: rgba(37, 43, 66, 1);
+    padding: 30px 0 0;
+    position: sticky;
+    top:0;
+}
+
+.head-content, .navbar, .list-items, .register-items {
+    display: flex;
+    align-items: center;
+}
+
+
+.head-content {
+    gap: 60px;
+}
+
+.navbar {
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.list-items {
+    gap: 30px;
+}
+
+.register-items {
+    gap: 45px;
+}
+
+.item a, .register-items a, .register-items button span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.register-items button {
+    background-color: #23A6F0;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Main section */
+
+.main{
+    background: rgba(37, 43, 66, 1) url(../images/blob.svg);
+    background-size: cover;
+    height: 800px;
+    padding: 120px 150px;
+}
+
+.main-section, .main-content-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.main-section{
+    gap:30px;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
+
+.main-content h1{
+    font-size: 58px;
+    font-weight: 800;
+    color:#fff;
+}
+
+.main-content p{
+    font-size:24px;
+    font-weight: 500;
+    color:#fff;
+}
+
+.main-content-buttons{
+    gap:10px;
+}
+
+.main-content-buttons button{
+    padding: 15px 36px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color:#fff;
+}
+
+.main-content-buttons button:nth-child(1){
+    background-color: rgba(35, 166, 240, 1);
+    border:1px solid rgba(35, 166, 240, 1)
+}
+
+.main-content-buttons button:nth-child(2){
+    background-color: transparent;
+    border:1px solid #fff;
+}
+
+.main-img img{
+    width: 471px;
+}
