@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* p:first-child{
+    color:red;
+} */
+
+/* p:last-child{
+    color:blue;
+} */
+
+input:focus {
+    background-color: yellow;
+}
+
+/* p:nth-child(1) {
+    color: red;
+}
+
+p:nth-child(2) {
+    color: blue;
+}
+
+p:nth-child(odd) {
+    background-color: aqua;
+}
+
+p:nth-child(even) {
+    background-color: chocolate;
+}
+
+p:nth-child(n+3) {
+    font-size: 30px;
+} */
+
+
+.burger-menu {
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    margin: 50px 30px;
+    position: relative;
+}
+
+
+.burger-menu::before {
+    content: "";
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+.burger-menu::after {
+    content: "";
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+}
+
+.list-items {
+    margin-left: 50px;
+}
+
+.item::marker {
+    content: "+";
+    color: blue;
+}
+
+p::selection {
+    background-color: yellow;
+    color: red;
+}
+
+.container {
+    width: 80%;
+    height: 700px;
+    border: 2px solid blue;
+    display: flex;
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center; */
+    /* align-items: stretch; */
+    /* flex-wrap: wrap;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly; */
+    /* flex-direction: row-reverse;
+    justify-content: flex-start; */
+
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+
+    /* flex-direction: column-reverse;
+    justify-content: flex-end; */
+    /* align-items: flex-start; */
+    flex-flow: row nowrap;
+    gap: 30px;
+
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #8a2be2;
+    border: 1px solid black;
+}
+
+.box:nth-child(1) {
+    /* flex-grow: 0; */
+    /* flex-shrink: 1; */
+    align-self: center;
+    order: 2;
+}
+
+.box:nth-child(2) {
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+    order:1;
+}
+
+.box:nth-child(3) {
+    /* flex-grow: 3; */
+    /* flex-shrink: 0; */
+    order: 3;
+    /* align-self: flex-end; */
+}
