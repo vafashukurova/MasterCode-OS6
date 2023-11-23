@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-columns: 100px 200px 50px auto;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px 200px;
+    grid-template-rows: auto 50px;
+    /* column-gap: 20px;
+        row-gap: 10px;
+        gap:30px; */
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* .box:nth-child(1) {
+    background-color: aqua;
+    margin: 20px; 
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+/* grid-column: 1/3; */
+/* grid-row-start:1;
+    grid-row-end:3; */
+/* grid-row: 1/span 3;
+} */
+
+/* .box:nth-child(2) {
+    background-color: red;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-row: 2/5;
+}
+
+.box:nth-child(3) {
+    background-color: rgb(30, 255, 0);
+}
+
+.box:nth-child(4) {
+    background-color: rgb(255, 0, 195);
+    grid-row: 2/5;
+} */
+
+
+.gallery-div {
+    height: 400px;
+    display: grid;
+    /* grid-template-areas: 
+    "box1 box2 box3 box4"
+    "box5 box6 box6 box7"
+    "box5 box8 box9 box7"
+    ; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.box:nth-child(1) {
+    background-color: #31322C;
+    /* grid-area: box1; */
+}
+
+.box:nth-child(2) {
+    background-color: #39A0ED;
+    /* grid-area: box2; */
+}
+
+.box:nth-child(3) {
+    background-color: #15C4A3;
+    /* grid-area: box3; */
+}
+
+.box:nth-child(4) {
+    background-color: #31322C;
+    /* grid-area: box4; */
+}
+
+.box:nth-child(5) {
+    background-color: #4C6085;
+    /* grid-area: box5; */
+}
+
+.box:nth-child(6) {
+    background-color: #31322C;
+    /* grid-area: box6; */
+}
+
+/* .box:nth-child(7) {
+    background-color: #4C6085;
+    grid-area: box7;
+}
+
+.box:nth-child(8) {
+    background-color: #39A0ED;
+    grid-area: box8;
+}
+
+.box:nth-child(9) {
+    background-color: #15C4A3;
+    grid-area: box9;
+} */
+
+
+.box-shadow{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    box-shadow: 10px 10px  20px 20px yellowgreen;
+}
+
+
+img{
+    margin: 100px;
+    /* box-shadow: 10px 10px  20px 20px yellowgreen; */
+    filter:drop-shadow(10px 10px 1px blue)
+}
+
+
+h1{
+    margin: 50px;
+    font-size: 40px;
+    color:crimson;
+    text-shadow: 5px 5px 1px  rgb(168, 56, 78);
+}
