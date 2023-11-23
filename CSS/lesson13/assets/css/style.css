@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gallery-div {
+    height: 500px;
+    display: grid;
+    grid-template-areas:
+        "box1 box2 box3 box4"
+        "box5 box6 box6 box7"
+        "box5 box8 box9 box7"
+    ;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    gap: 10px;
+}
+
+.box:nth-child(1) {
+    background-color: #31322C;
+    grid-area: box1;
+}
+
+.box:nth-child(2) {
+    background-color: #39A0ED;
+    grid-area: box2;
+}
+
+.box:nth-child(3) {
+    background-color: #15C4A3;
+    grid-area: box3;
+}
+
+.box:nth-child(4) {
+    background-color: #31322C;
+    grid-area: box4;
+}
+
+.box:nth-child(5) {
+    background-color: #4C6085;
+    grid-area: box5;
+}
+
+.box:nth-child(6) {
+    background-color: #31322C;
+    grid-area: box6;
+}
+
+.box:nth-child(7) {
+    background-color: #4C6085;
+    grid-area: box7;
+}
+
+.box:nth-child(8) {
+    background-color: #39A0ED;
+    grid-area: box8;
+}
+
+.box:nth-child(9) {
+    background-color: #15C4A3;
+    grid-area: box9;
+}
+
+
+/*
+ 1200px< Desktop Mode (992px)
+ 768px< Tablet Mode (planset)
+ 576px< Mobile Mode (480px)
+*/
+
+p {
+    color: red;
+    font-size: 20px;
+}
+
+
+img{
+    width: 500px;
+    max-width: 100%;
+}
+
+@media print {
+    p {
+        color: red;
+    }
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+    body {
+        background-color: burlywood;
+    }
+
+    p {
+        background-color: black;
+        color: #fff;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .gallery-div {
+        grid-template-areas:
+            "box1 box2 box3"
+            "box5 box6 box6"
+            "box5 box8 box9"
+            "box4 box7 box7"
+        ;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    body {
+        background-color: darkmagenta;
+    }
+
+    p {
+        background-color: red;
+        color: yellow;
+        font-size: 14px;
+    }
+
+    .gallery-div {
+        grid-template-areas:
+            "box1 box2"
+            "box5 box6"
+            "box5 box8"
+            "box4 box7"
+            "box3 box9"
+        ;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    body {
+        background-color: darkred;
+    }
+
+    p {
+        background-color: blue;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .gallery-div {
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9"
+        ;
+    }
+}
