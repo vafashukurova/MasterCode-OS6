@@ -1,0 +1,42 @@
+.btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.btn.btn-primary {
+    background-color: #0D6EFD;
+    color: #fff;
+}
+
+.btn.btn-success {
+    background-color: #198754;
+    color: #fff;
+}
+
+.btn.btn-danger {
+    background-color: #BB2D3B;
+    color: #fff;
+}
+
+.btn.btn-secondary {
+    background-color: #6C757D;
+    color: #fff;
+}
+
+.btn.btn-info {
+    background-color: #0DCAF0;
+    color: #fff;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
