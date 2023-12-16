@@ -109,7 +109,6 @@ console.log(typeof testSymbol);
 
 
 
-
 //? get data from user
 //! alert, prompt, confirm
 
