@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    form{
+        margin:2rem 3rem;
+        display: flex;
+        gap:3rem;
+    }
+
+    input{
+        width: 100%;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border:1px solid #c2c2c2;
+    }
+
+    input:focus{
+        outline:none;
+    }
+
+    form>button{
+        padding: 0 3rem;
+        background-color: #c2c2c2;
+        border: 1px solid transparent;
+        color:#fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    button:hover{
+        border-color: grey;
+    }
+
+    .container{
+        margin:4rem 3rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:2rem;
+    }
+
+    .card{
+        background-color: #c2c2c2;
+        text-align: center;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        gap:.5rem;
+        align-items: center;
+    }
+
+    .card>button{
+        width: 50%;
+        padding: .5rem 0;
+        cursor: pointer;
+        border:none;
+    }
+
+
+
+</style>
+<body>
+
+
+    <form>
+       <input type="text" name="name" placeholder="Enter name" autocomplete="off">
+
+       <input type="email" name="email" placeholder="Enter email" autocomplete="off">
+
+       <button>send</button>
+    </form>
+    
+
+    <div class="container">
+    <!-- <div class="card">
+        <h2>name</h2>
+        <span>email</span>
+        <button>delete</button>
+    </div> -->
+    </div>
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
