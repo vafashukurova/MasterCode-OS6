@@ -61,22 +61,22 @@ randomNum
 
 const div = document.querySelector(".container");
 
-fetch("https://jsonplaceholder.typicode.com/users")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (users) {
-    users.forEach((user) => {
-      //  console.log(user.name)
-      div.innerHTML+= `
-     <div class="card">
-     <h3>${user.name}</h3>
-     <p>${user.username}</p>
-     <span>${user.email}</span>
-    </div>
-     `;
-    });
-  });
+// fetch("https://jsonplaceholder.typicode.com/users")
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (users) {
+//     users.forEach((user) => {
+//       //  console.log(user.name)
+//       div.innerHTML+= `
+//      <div class="card">
+//      <h3>${user.name}</h3>
+//      <p>${user.username}</p>
+//      <span>${user.email}</span>
+//     </div>
+//      `;
+//     });
+//   });
 
 fetch("./data.json")
   .then(function (response) {
