@@ -1,0 +1,50 @@
+.button-container {
+  margin: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.4rem;
+  transition: all 0.4s ease-in-out;
+  color: map-get($buttons, "--btn-color-white");
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn.btn-primary {
+  background-color: map-get($buttons, "--btn-primary");
+  color: #fff;
+
+  &:hover {
+    background-color: map-get($buttons, "--btn-primary-hover");
+  }
+}
+
+.btn.btn-secondary {
+  background-color: map-get($buttons, "--btn-secondary");
+  color: #fff;
+
+  &:hover {
+    background-color: map-get($buttons, "--btn-secondary-hover");
+  }
+}
+
+.btn.btn-success {
+  background-color: map-get($buttons, "--btn-success");
+  color: #fff;
+
+  &:hover {
+    background-color: map-get($buttons, "--btn-success-hover");
+  }
+}
+
+.btn.btn-danger {
+  background-color: map-get($buttons, "--btn-danger");
+  color: #fff;
+
+  &:hover {
+    background-color: map-get($buttons, "--btn-danger-hover");
+  }
+}

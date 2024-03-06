@@ -1,0 +1,19 @@
+$buttons: (
+  "--btn-primary": #0d6efd,
+  "--btn-secondary": #6c757d,
+  "--btn-success": #198754,
+  "--btn-danger": #dc3545,
+
+  "--btn-primary-hover": #004dc1,
+  "--btn-secondary-hover": #4f565c,
+  "--btn-success-hover": #156942,
+  "--btn-danger-hover": #88212c,
+
+  "--btn-color-white": #fff,
+);
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+);

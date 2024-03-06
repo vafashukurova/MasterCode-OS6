@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+h1 {
+  background-color: cadetblue;
+}
+
+.container {
+  background-color: beige;
+  height: 20rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.container .box {
+  width: 5rem;
+  height: 5rem;
+  background-color: darkgrey;
+  transition: all 0.3s ease-in-out;
+}
+.container .box:hover {
+  cursor: pointer;
+  background-color: rgb(106, 178, 178);
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-wrap: wrap;
+    background-color: #198754;
+  }
+}
+.button-container {
+  margin: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.4rem;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: #0d6efd;
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  background-color: #004dc1;
+}
+
+.btn.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+.btn.btn-secondary:hover {
+  background-color: #4f565c;
+}
+
+.btn.btn-success {
+  background-color: #198754;
+  color: #fff;
+}
+.btn.btn-success:hover {
+  background-color: #156942;
+}
+
+.btn.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+.btn.btn-danger:hover {
+  background-color: #88212c;
+}/*# sourceMappingURL=style.css.map */

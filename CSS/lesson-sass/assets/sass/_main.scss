@@ -1,0 +1,33 @@
+.container {
+  background-color: $container-bg-color;
+  height: 20rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: nowrap;
+  // align-items: center;
+  // justify-content: space-between;
+
+  @include flexBox(row, nowrap, center, space-between, 1rem);
+
+  .box {
+    width: 5rem;
+    height: 5rem;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(106, 178, 178);
+    }
+  }
+}
+
+@include sm {
+  .container {
+    flex-wrap: wrap;
+    background-color: map-get($buttons, "--btn-success");
+  }
+}
