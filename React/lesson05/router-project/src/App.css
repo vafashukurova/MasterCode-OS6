@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items{
+    display: flex;
+    gap:20px;
+    padding: 20px;
+}
+
+h1,footer{
+    padding: 20px;
+}
+
+.active{
+    color:red;
+}
